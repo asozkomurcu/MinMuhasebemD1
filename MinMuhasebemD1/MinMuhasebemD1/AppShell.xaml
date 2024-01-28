@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MinMuhasebemD1.AppShell">
+    <FlyoutItem Title="Gün Sonu">
+        <ShellContent Title="Gün Sonu">
+            <ContentPage>
+                <Label Text="Gün Sonu İşlemleri"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Ödemeler">
+        <ShellContent >
+            <ContentPage>
+            <Label Text="Ödeme Ekle"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Kredi Kartları">
+        <ShellContent Title="Kredi Kartı İşlemleri">
+            
+                    <ContentPage>
+            <Label Text="Kredi Kartı Ödeme"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+                <ShellContent>
+                    <ContentPage>
+                        <Label Text="Kredi Kartı Harcama"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </ContentPage>
+               
+        </ShellContent>
+
+    
+    <ShellContent Title="Kredi Kartı Listesi">
+            <ContentPage>
+                <Label Text="Kredi Kartı Listesi"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+        <ShellContent Title="Kredi Kartı Ekle">
+            <ContentPage>
+                <Label Text="Kredi Kartı Ekle"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Tedarikçiler">
+        <ShellContent>
+            <ContentPage>
+            <Label Text="Tedarikçi Listesi"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+        <ShellContent>
+            <ContentPage>
+            <Label Text="Tedarikçi Ekle"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            </ContentPage>
+        </ShellContent>
+    </FlyoutItem>
+</Shell>

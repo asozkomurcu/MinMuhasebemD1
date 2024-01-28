@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MinMuhasebemD1.Views.CreditCardsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--<Label Grid.Row="0" 
+                       Text="Kredi Kartı Takma Adı" Margin="0"/>-->
+                <Entry Grid.Row="1"  x:Name="entCreditCardName" Placeholder="Kredi Kartı Takma Adı" />
+                <Label Grid.Row="2" 
+                       Text="Hesap Kesim Tarihi"/>
+                <StackLayout Grid.Row="3">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Ayın"/>
+                        <Picker Grid.Row="0" Grid.Column="1" x:Name="statementDay" Title="Gün" 
+                                IsVisible="true" SelectedIndexChanged="statementDay_SelectedIndexChanged"/>
+                        <!--<Label Grid.Row="0" Grid.Column="2" Text="{Binding Source={x:Reference statementDay},Path=SelectedIndex}" IsVisible="false"/>-->
+                        <Label Grid.Row="0" Grid.Column="1"  x:Name="lblResultStatement" IsVisible="false"/>
+                        <Label Grid.Row="0" Grid.Column="2" Text="'incı/üncü günü."/>
+                    </Grid>
+                </StackLayout>
+                <Label Grid.Row="4" 
+                       Text="Son Ödeme Tarihi"/>
+                <StackLayout Grid.Row="5">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Ayın"/>
+                        <Picker Grid.Row="0" Grid.Column="1" x:Name="paymentDueDay" Title="Gün" WidthRequest="30"
+                                IsVisible="true" SelectedIndexChanged="paymentDueDay_SelectedIndexChanged"/>
+                        <Label Grid.Row="0" Grid.Column="1"  x:Name="lblResultPayment" IsVisible="false"/>
+                        <Label Grid.Row="0" Grid.Column="2" Text="'incı/üncü günü."/>
+                        
+                    </Grid>
+                </StackLayout>
+                <StackLayout Grid.Row="6">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Text="Kaydet" FontSize="14" VerticalOptions="CenterAndExpand" Padding="2" BackgroundColor="Green" HeightRequest="30"/>
+                        <Button Grid.Column="1" Text="Vazgeç" FontSize="14" VerticalOptions="CenterAndExpand" Padding="2" BackgroundColor="Red" HeightRequest="30"/>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

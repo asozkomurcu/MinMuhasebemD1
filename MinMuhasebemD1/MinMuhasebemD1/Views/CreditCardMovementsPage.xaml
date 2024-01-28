@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MinMuhasebemD1.Views.CreditCardMovementsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Picker Grid.Row="0" x:Name="creditCardsNamePicker" Title="Kredi Kartları" IsVisible="true" SelectedIndexChanged="creditCardsNamePicker_SelectedIndexChanged"/>
+                <Label Grid.Row="0" Grid.Column="1"  x:Name="lblResultCreditCerd" IsVisible="false"/>
+                <StackLayout Grid.Row="1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Picker Grid.Row="0" x:Name="typeTransaction" Title="İşlem Türü" SelectedIndexChanged="typeTransaction_SelectedIndexChanged" WidthRequest="30">
+                            <Picker.Items>
+                                <x:String>Kart Borç Ödemesi</x:String>
+                                <x:String>Kart Çekim İşlemi</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Entry Grid.Row="1" x:Name="entCreditCardPayment" IsVisible="false" Keyboard="Numeric"/>
+                        <StackLayout Grid.Row="1" x:Name="stclCreditCardCharges" IsVisible="false">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Entry Grid.Row="0" x:Name="entCreditCardCharges" Keyboard="Numeric"/>
+                                <Picker Grid.Row="1" x:Name="pckSupplier" Title="Tedarikçiler" SelectedIndexChanged="pckSupplier_SelectedIndexChanged"/>
+                            </Grid>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
