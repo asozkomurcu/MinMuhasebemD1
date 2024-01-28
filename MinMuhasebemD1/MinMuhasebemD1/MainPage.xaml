@@ -18,10 +18,11 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="40"/>
                     </Grid.RowDefinitions>
                     <Label Text="Gün Sonu" BackgroundColor="Aqua"/>
-                    <Label Grid.Row="1" Text="Gün Sonu İşlemleri" BackgroundColor="Lavender"/>
+                    <!--<Label Grid.Row="1" Text="Gün Sonu İşlemleri" BackgroundColor="Lavender"/>-->
+                    <Button Grid.Row="1" x:Name="btnAddedIncome" Text="Gün Sonu İşlemleri" Clicked="btnAddedIncome_Clicked" BackgroundColor="Lavender"/>
                 </Grid>
             </StackLayout>
 
@@ -29,10 +30,10 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="40"/>
                     </Grid.RowDefinitions>
                     <Label Text="Ödemeler" BackgroundColor="Aqua"/>
-                    <Label Grid.Row="1" Text="Ödeme Ekle" BackgroundColor="Lavender"/>
+                    <Button Grid.Row="1" x:Name="btnPaymentPage" Text="Ödeme Ekle" Clicked="btnPaymentPage_Clicked" BackgroundColor="Lavender"/>
                 </Grid>
             </StackLayout>
 
@@ -40,16 +41,17 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
                     </Grid.RowDefinitions>
                     <Label Text="Kredi Kartları" BackgroundColor="Aqua"/>
-                    <Label Grid.Row="1" Text="Kredi Kartı Ödeme" BackgroundColor="Lavender"/>
-                    <Label Grid.Row="2" Text="Kredi Kartı Harcama" BackgroundColor="LawnGreen"/>
+                    <Button Grid.Row="2" x:Name="btnCreditCardMovement" Text="Kredi Kartı İşlemleri" Clicked="btnCreditCardMovement_Clicked" BackgroundColor="LawnGreen"/>
                     <Label Grid.Row="3" Text="Kredi Kartı Listesi" BackgroundColor="LemonChiffon"/>
-                    <Label Grid.Row="4" Text="Kredi Kartı Ekle" BackgroundColor="LightCoral"/>
+                    <Button Grid.Row="4" x:Name="btnCreditCardAdded" Text="Kredi Kartı Ekle" Clicked="btnCreditCardAdded_Clicked" BackgroundColor="LightCoral"/>
+                    <Button Grid.Row="5" x:Name="btnCCCommision" Text="Pos Komisyon Oranı" Clicked="btnCCCommision_Clicked" BackgroundColor="DarkOliveGreen"/>
                 </Grid>
             </StackLayout>
 
@@ -57,12 +59,12 @@
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
-                        <RowDefinition Height="50"/>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
                     </Grid.RowDefinitions>
                     <Label Text="Tedarikçiler" BackgroundColor="Aqua"/>
                     <Label Grid.Row="1" Text="Tedarikçi Listesi" BackgroundColor="Lavender"/>
-                    <Label Grid.Row="2" Text="Tedarikçi Ekle" BackgroundColor="LawnGreen"/>
+                    <Button Grid.Row="2" x:Name="btnAddedSupplier" Text="Tedarikçi Ekle" Clicked="btnAddedSupplier_Clicked" BackgroundColor="LawnGreen"/>
                 </Grid>
             </StackLayout>
 

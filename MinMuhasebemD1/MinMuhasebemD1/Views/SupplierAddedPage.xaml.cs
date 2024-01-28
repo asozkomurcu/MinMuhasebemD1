@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MinMuhasebemD1.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SupplierPage : ContentPage
+	public partial class SupplierAddedPage : ContentPage
 	{
-		public SupplierPage ()
+		public SupplierAddedPage ()
 		{
 			InitializeComponent ();
 		}

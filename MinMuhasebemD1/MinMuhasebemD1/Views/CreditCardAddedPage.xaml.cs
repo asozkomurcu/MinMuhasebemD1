@@ -9,11 +9,11 @@ using Xamarin.Forms.Xaml;
 
 namespace MinMuhasebemD1.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CreditCardsPage : ContentPage
-    {
-        public CreditCardsPage()
-        {
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class CreditCardAddedPage : ContentPage
+	{
+		public CreditCardAddedPage ()
+		{
             InitializeComponent();
             LoadModels();
         }
@@ -22,7 +22,7 @@ namespace MinMuhasebemD1.Views
         {
             base.OnAppearing();
 
-            
+
         }
 
         void LoadModels()
@@ -38,12 +38,12 @@ namespace MinMuhasebemD1.Views
                 paymentDueDay.Items.Add(model.ToString());
             }
         }
-            
+
 
         void statementDay_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = statementDay.SelectedIndex;
-            
+
             if (selectedIndex != -1)
             {
                 statementDay.IsVisible = false;

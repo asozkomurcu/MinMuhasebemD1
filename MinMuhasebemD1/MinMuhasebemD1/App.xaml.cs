@@ -28,7 +28,7 @@ namespace MinMuhasebemD1
 
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
 
-            MainPage = new CreditCardsPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

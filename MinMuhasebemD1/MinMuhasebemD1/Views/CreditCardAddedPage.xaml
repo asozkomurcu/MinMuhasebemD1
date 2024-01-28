@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MinMuhasebemD1.Views.CreditCardsPage">
+             x:Class="MinMuhasebemD1.Views.CreditCardAddedPage">
     <ContentPage.Content>
         <StackLayout Margin="20">
             <Grid>
@@ -57,7 +57,7 @@
                                 IsVisible="true" SelectedIndexChanged="paymentDueDay_SelectedIndexChanged"/>
                         <Label Grid.Row="0" Grid.Column="1"  x:Name="lblResultPayment" IsVisible="false"/>
                         <Label Grid.Row="0" Grid.Column="2" Text="'incı/üncü günü."/>
-                        
+
                     </Grid>
                 </StackLayout>
                 <StackLayout Grid.Row="6">
